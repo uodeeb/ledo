@@ -6,17 +6,17 @@
 
 @font-face {
     font-family: "kufi-light";
-    src: url("/fonts/NotoKufiArabic-ExtraLight.ttf");
+    src: url("fonts/NotoKufiArabic-ExtraLight.ttf");
 }
 
 @font-face {
     font-family: "kufi-reg";
-    src: url("/fonts/NotoKufiArabic-VariableFont_wght.ttf");
+    src: url("fonts/NotoKufiArabic-VariableFont_wght.ttf");
 }
 
 @font-face {
     font-family: "kufi-bold";
-    src: url("/fonts/NotoKufiArabic-SemiBold.ttf");
+    src: url("fonts/NotoKufiArabic-SemiBold.ttf");
 }
 
 :root {
