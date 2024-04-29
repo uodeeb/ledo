@@ -77,5 +77,5 @@ hamburgerBtn.addEventListener("touchstart", (event) => {
 const callButton = document.getElementById("callButton");
 
 callButton.addEventListener("click", () => {
-  window.location.href = "tel:1234567890";
+  window.location.href = "tel:+966560692118";
 });
