@@ -1,20 +1,23 @@
 function changeContentOnClick() {
   const servicesElements = document.getElementsByClassName("sec02")[0].children;
   const servDes = [
-    "مبيدات آمنة للأسرة: نستخدم مبيدات حشرية عالية الجودة، بدون رائحة، وآمنة تمامًا لك ولعائلتك.",
-    "خدمة ضمان ومتابعة: نقدم خدمة ضمان شاملة ومتابعة دورية لضمان بقاء منزلك خاليًا من الحشرات.",
-    "زيارات ميدانية متخصصة: فريقنا من المهندسين المتخصصين في مكافحة الحشرات جاهز لإجراء زيارات ميدانية لتقييم وحل مشكلتك بكفاءة.",
-    "مع ليدو هتبيدو - نحن نضمن لك بيئة منزلية نظيفة وخالية من الحشرات. اتصل بنا اليوم وودع الحشرات إلى الأبد!",
-  ];
+    "مع تزايد حوادث المشاكل الصحية المتعلقة بالذباب والبعوض، مثل حمى الضنك والملاريا، وجب علينا إستخدام نهج هادف للمكافحة الفعالة لهذه المشكلة",
+    "إحمِ منزلك أو منشأتك من جميع تهديدات القوارض والحشرات الزاحفة (الصراصير والنمل العادى والابيض والخنافس).",
+    "إن حشرات بق الفراش هي حشرات صغيرة بلا أجنحة تتغذى فقط على دماء الحيوانات ذوات الدم الحار مما يجعل الإنسان مصدرًا مثاليًا للغذاء لها اتصل بليدو وتخلص منها نهائيا.",
+    "خدمات تبخير ليدو  هي الحل النهائي للقضاء على جميع الحشرات داخل المحيط مغلق / مفتوح لتتأكد تمامًا من أن منزلك أو منشأتك خالية من الإصابة."
+     ];
 
   for (let i = 0; i < servicesElements.length; i++) {
     let isChanged = false; // Flag to track element state
 
     servicesElements[i].addEventListener("click", () => {
       if (!isChanged) {
-        servicesElements[i].children[0].textContent = servDes[i];
+        servicesElements[i].children[0].textContent =""
+        servicesElements[i].children[1].textContent = servDes[i];
         isChanged = true; // Mark element as changed
       } else {
+        console.log(servicesElements[i].children[1])
+        servicesElements[i].children[1].textContent = "";
         servicesElements[i].children[0].textContent =
           servicesElements[i].dataset.originalContent; // Revert to original content
         isChanged = false; // Mark element as back to original state
@@ -44,9 +47,11 @@ function changeContentOnClickClean() {
 
     servicesElements[i].addEventListener("click", () => {
       if (!isChanged) {
-        servicesElements[i].children[0].textContent = servDes[i];
+        servicesElements[i].children[0].textContent =""
+        servicesElements[i].children[1].textContent = servDes[i];
         isChanged = true; // Mark element as changed
       } else {
+        servicesElements[i].children[1].textContent =""
         servicesElements[i].children[0].textContent =
           servicesElements[i].dataset.originalContent; // Revert to original content
         isChanged = false; // Mark element as back to original state

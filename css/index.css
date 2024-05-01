@@ -168,11 +168,18 @@
     background-color: rgb(255, 255, 255, 0.6);
     color: #3a3a3a;
     padding: 3rem;
+    border: 10px double rgb(243,215,89, 0.5);
 
 }
 
+.serv__tit {
+    /* color: rgb(243,215,89); */
+    color: var(--or);
+    text-shadow: 0px 1px 1px #000000;
+    font-family: var(--kufi-bold);
+}
 .serv__cont {
-    color: #7b7b7b;
+    color: #fff;
 }
 
 .serv01 {
@@ -309,6 +316,16 @@
     grid-area: o_tit;
     color: #ffffff;
     text-align: center;
+    font-family: var(--kufi-bold);
+    font-size: 2.5rem ;
+}
+
+.oserv .serv__tit{
+    color: #fff;
+}
+
+.oserv .serv__cont{
+    color: #fff;
 }
 
 .oserv01 {
@@ -347,6 +364,10 @@
     align-self: center;
 }
 
+.sec05 .contact__tit {
+    font-family: var(--kufi-bold);
+    font-size: 2rem;
+}
 .sec05 .contact__txt {
     font-size: 1.7rem;
     font-weight: bolder;
@@ -356,14 +377,14 @@
 }
 
 .animate__animated.animate__zoomInUp {
-    --animate-duration: 3s;
+    --animate-duration: 10s;
 
 }
 
 /*-=----------------Footer---------------------------=-*/
 .ft {
     width: 100vw;
-    height: 10vh;
+    height: 15vh;
     text-align: center;
     background-color: #14373e;
     color: #fff;
@@ -381,6 +402,10 @@
     background-color: rgb(208, 54, 49, 0.8);
 }
 
+#whats {
+    margin-top: 1rem;
+    color: #000;
+}
 /*------------Small Screens---------------------------*/
 @media screen and (max-width:600px) {
     * {
@@ -507,8 +532,16 @@
 
     .sec02 article {
         color: #000;
+        text-align: center;
     }
 
+    .serv__tit {
+        font-size: 1.5rem;
+    }
+
+    .serv__cont {
+        color: #000;
+    }
     /*-=----------------section 03---------------------------=-*/
     .sec03 {
         display: flex;
